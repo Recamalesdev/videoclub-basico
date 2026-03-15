@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videoclub</title>
+  </head>
+  <body>
+    <header>
+      <h1>Videoclub de Bernardo</h1>
+    </header>
+
+    <main>
+      <section>
+        <form id="form-peliculas" action="/" method="post">
+          <div>
+            <label>
+              Titulo:
+              <input
+                type="text"
+                id="input-titulo"
+                name="titulo"
+                placeholder="Titulo de la película"
+              />
+            </label>
+
+            <div class="acciones-select">
+              <legend>
+                Género:
+                <select name="Genero" id="select-genero">
+                  <option value="accion">Acción</option>
+                  <option value="comedia">Comedia</option>
+                  <option value="terror">Terror</option>
+                  <option value="drama">Drama</option>
+                  <option value="ciencia-ficcion">Ciencia Ficción</option>
+                </select>
+              </legend>
+
+              <button id="btn-guardar">Guardar</button>
+
+              <p id="mensaje-carga" style="display: none; color: blue">
+                ⏳ Viajando a Internet a por tu película...
+              </p>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <p id="contador-peliculas"></p>
+      <section>
+        <ul id="lista-peliculas"></ul>
+      </section>
+    </main>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
