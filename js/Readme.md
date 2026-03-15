@@ -1,0 +1,1 @@
+Proyecto de aprendizaje para dominar la separación de responsabilidades (MVC). En este proyecto he aprendido a: manipular el DOM, guardar datos persistentes con localStorage y consumir una API externa con fetch y async/await.
